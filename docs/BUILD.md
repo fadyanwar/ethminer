@@ -74,6 +74,22 @@ If you want to use locally installed [ROCm-OpenCL](https://rocmdocs.amd.com/en/l
     cmake ..
     ```
 
+    If you get below download tinmeout messages, try donwloading boost manually like so 
+
+    ```shell
+    wget 'https://boostorg.jfrog.io/artifactory/main/release/1.66.0/source/boost_1_66_0.7z' -O $HOME/.hunter/_Base/Download/Boost/1.66.0/075d0b4/boost_1_66_0.7z
+    ```
+    
+    dst='/home/ubuntu/.hunter/_Base/Download/Boost/1.66.0/075d0b4/boost_1_66_0.7z'
+    timeout='none'
+    -- Using src='https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.7z'
+    -- Retrying...
+    -- Using src='https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.7z'
+    -- Retry after 5 seconds (attempt #2) ...
+    -- Using src='https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.7z'
+    -- Retry after 5 seconds (attempt #3) ...
+
+
     **Note:** On Windows, it's possible to have issues with VS 2017 default compilers, due to CUDA expecting a specific toolset version; in that case, use the VS 2017 installer to get the VS 2015 compilers and pass the `-T v140` option:
 
     ```shell

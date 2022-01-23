@@ -74,7 +74,7 @@ If you want to use locally installed [ROCm-OpenCL](https://rocmdocs.amd.com/en/l
     cmake ..
     ```
 
-    If you get below download tinmeout messages, try donwloading boost manually like so 
+    If you get below download timeout messages, try donwloading boost manually like so 
 
     ```shell
     wget 'https://boostorg.jfrog.io/artifactory/main/release/1.66.0/source/boost_1_66_0.7z' -O $HOME/.hunter/_Base/Download/Boost/1.66.0/075d0b4/boost_1_66_0.7z
